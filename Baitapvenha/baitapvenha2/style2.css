@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-margin {
+    margin-left: 15%;
+    margin-right: 35%;
+}
+.margin-bottom-head {
+    margin-bottom: 15px;
+}
+/* -------------------internal css--------------------- */
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    overflow-y: scroll;
+    line-height: 1.5;
+}
+h1 {
+    font-size: 1.6rem !important;
+}
+
+h1, h2, h3 {
+    line-height: 1.75 !important;
+}
+
+h2, h3 {
+    font-weight: 700;
+    margin-top: 32px;
+    margin-bottom: 12px;
+}
+
+h2 {
+    font-size: 1.4rem !important;
+}
+
+p {
+    margin-bottom: 0.5rem;
+}
+
+ol, ul {
+    margin: 0 0 1rem 0;
+    list-style-position: inside;
+    margin-left: 2%;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+    width: 800px;
+}
+
+blockquote {
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-style: solid;
+    border-color: #ccc;
+    border-width: 0;
+    padding: 0 8px 0 20px;
+    border-left-width: 5px;
+}
+
+/* ----------------------------------------------------------------- */
+
+/* ------------------------content---------------------------------- */
+.text-decor {
+    text-decoration: none;
+}
+
+.category {
+    background-color: #e5e5e5;
+    color: gray;
+    border: 1px solid #c4c4c4;
+    border-radius: 2px;
+    margin-right: 0.4rem;
+    cursor: pointer;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.25em 0.4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+}
+
+
+.post-content {
+    overflow-x: auto;
+    padding: 1.5rem 0 1rem 0;
+    border-top: 0.5px solid #00000020;
+    line-height: 1.75rem;
+    letter-spacing: -0.003em;
+    word-wrap: break-word;
+}
