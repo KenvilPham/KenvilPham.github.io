@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .container-child {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .red-ex12 {
+            background-color: red;
+            height: 400px;
+        }
+
+        .green-ex12 {
+            background-color: green;
+            height: 200px;
+        }
+
+        .blue-ex12 {
+            background-color: blue;
+            height: 200px;
+        }
+
+        h2 {
+            margin-bottom: 50px;
+            font-size: 100px;
+        }
+
+        .flexbox-margin {
+            margin-right: 15px;
+        }
+
+        .flexbox-width60 {
+            width: 60%;
+        }
+
+        .flexbox-width40 {
+            width: 40%;
+        }
+
+        .red-ex34 {
+            background-color: red;
+            height: 400px;
+            width: 33.33%;
+        }
+
+        .green-ex34 {
+            background-color: green;
+            height: 400px;
+            width: 33.33%;
+        }
+
+        .blue-ex34 {
+            background-color: blue;
+            height: 400px;
+            width: 33.33%;
+        }
+
+        .flexbox-margin-left-right {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Exe1</h2>
+    <div class="container">
+        <div class="red-ex12 flexbox-width60"></div>
+        <div class="container-child flexbox-width40">
+            <div class="green-ex12"></div>
+            <div class="blue-ex12"></div>
+        </div>
+    </div>
+
+    <h2>Ex2</h2>
+    <div class="container">
+        <div class="red-ex12 flexbox-margin flexbox-width60"></div>
+        <div class="container-child flexbox-width40">
+            <div class="green-ex12"></div>
+            <div class="blue-ex12"></div>
+        </div>
+    </div>
+
+    <h2>Ex3</h2>
+    <div class="container">
+        <div class="red-ex34"></div>
+        <div class="green-ex34"></div>
+        <div class="blue-ex34"></div>
+    </div>
+
+    <h2>Ex4</h2>
+    <div class="container">
+        <div class="red-ex34"></div>
+        <div class="green-ex34 flexbox-margin-left-right"></div>
+        <div class="blue-ex34"></div>
+    </div>
+
+</body>
+
+</html>
