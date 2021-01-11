@@ -2,53 +2,99 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
 }
 
 .content {
     width: 100%;
     height: 100%;
     margin-top: 3rem;
+    margin-bottom: 50px;
+    font-weight: 400;
+    line-height: 1.5;
 }
 
-.banner {
+.banner, .introduction, .route-list{
     max-width: 1250px;
-    height: 522px;
-    background-color: sienna;
-    padding-left: 15px;
-    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-direction: row;
+
 }
 
+.banner {
+    height: 522px;
+}
+
+.introduction {
+    height: 181px;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: space-around;
+}
 .banner-items-left {
     width: 66.6666667%;
     height: 100%;
     padding-left: 15px;
     padding-right: 15px;
-    background-color: silver;
+    position: relative;
+    border-radius: 4px;
 }
 
 .banner-items-left img {
     width: 100%;
     height: 100%;
     border-radius: 4px;
-    box-shadow: 0 5px 4px rgba(0, 0, 0, .25);
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, .25);
+}
+.carousel-prev {
+    left: 0;
 }
 
+.carousel-next {
+    right: 0;
+}
+.carousel-next, .carousel-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    opacity: 0.5;
+}
+
+.carousel-next-icon, .carousel-prev-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: no-repeat 50%/100% 100%;
+
+}
+
+.carousel-prev-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
+} 
+
+.carousel-next-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
+}
 .banner-items-right {
     width: 33.3333333%;
     height: 100%;
     padding-left: 15px;
     padding-right: 15px;
-    background-color:  slateblue;
 }
 
 .list-posters {
     width: 100%;
     height: 100%;
-    background-color: snow;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -57,7 +103,6 @@
 .poster {
     height: 21.5%;
     width: 100%;
-    background-color: springgreen;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
 }
@@ -65,7 +110,7 @@
 .poster-thumbnail {
     float: left;
     height: 100%;
-    width: 105px;
+    width: 110px;
 }
 
 img {
@@ -85,7 +130,7 @@ img {
 
 .poster-info {
     float: left;
-    width: calc(100%-110px);
+    width: calc(100% - 110px);
     height: 100%;
     padding: 10px;
     display: flex;
@@ -107,4 +152,54 @@ img {
 a {
     text-decoration: none;
     background-color: transparent;
+}
+
+.intro {
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+    text-align: center;
+
+}
+
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.intro-title {
+    margin-top: 15px;
+    color: #464646;
+    font-size: 1rem;
+}
+
+.intro-description {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #999;
+    width: 80%;
+    font-weight: 300;
+    margin: auto;
+}
+
+.route {
+    padding-bottom: 5rem;
+    background-color: #e4f2fd;
+}
+
+.route-list {
+    height: 933px;
+    background-color: red;
+    opacity: 0.3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.route-item {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 33.3333333%;
+    height: 416px;
+    background-color: seagreen;
 }
