@@ -369,3 +369,39 @@ h3 {
     border-top-right-radius: 4px;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
 }
+
+.footer {
+    background-color: #464646;
+    width: 100%;
+    height: 500px;
+}
+
+.body-info {
+    width: 100%;
+    height: 500px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-info {
+    width: 23%;
+    height: 100%;
+    
+}
+
+.footer-content-title {
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.footer-content-description {
+    color: #b8b1b1;
+    line-height: 40px;
+}
+
+.footer-content-description a {
+    text-decoration: none;
+    color: #b8b1b1;
+}

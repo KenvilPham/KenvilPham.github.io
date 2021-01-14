@@ -66,11 +66,13 @@
     z-index: 5;
     padding-top: 25px;
     display: none;
+    min-width: 250px;
 }
 
 .sub-menu li {
-    background-color: blue;
+    background-color: #34465c;
     padding: 10px;
+    margin-left: 0 !important;
 }
 
 .menu-list li {
