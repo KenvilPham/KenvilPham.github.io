@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .red {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            transition-property: width height;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+
+            border-radius: 0;
+            /* viet tat */
+            /* transition: all 1s 2s linear; */
+        }
+
+        .red:hover {
+            width: 300px;
+            height: 300px;
+            border-radius: 150px;
+        }
+
+        .blue {
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            transition: all 2s 0.5s linear;
+        }
+        .blue:hover {
+            transform: scale(5);
+            transform: rotate(360deg);
+        }
+
+        .green {
+            background-color: green;
+            width: 100px;
+            height: 100px;
+            animation-name: change-color2 ;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+
+/* --------------animation -------------------*/
+        @keyframes change-color {
+            from {
+                background-color: green;
+            }
+
+            to {
+                background-color: red;
+            }
+        }
+
+        @keyframes change-color2 {
+            20% {
+                background-color: green;
+            }
+            40% {
+                background-color: yellow;
+            }
+            60% {
+                background-color: red;
+            }
+            80% {
+                background-color: pink;
+            }
+        }
+
+        .btblue {
+            background-color: blue;
+            width: 150px;
+            height: 50px;
+            border-radius: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 2s;
+            box-sizing: border-box;
+        }
+
+        .btblue:hover {
+            border-radius: 50px;
+            background-color: green;
+        }
+
+        .baitap2 {
+            width: 500px;
+            height: 500px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            margin: auto;
+        }
+
+        .box-item {
+            width: 30%;
+            background-color: red;
+            transition: all 2s;
+        }
+
+        .box-item:hover {
+           transform: scale(2);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="red"></div>
+
+    <div class="blue"></div>
+
+    <div class="green"></div>
+
+    <div class="btblue">LOGIN</div>
+
+    <div class="baitap2">
+        <div class="box-item"></div>
+        <div class="box-item"></div>
+        <div class="box-item"></div>
+        <div class="box-item"></div>
+        <div class="box-item"></div>
+        <div class="box-item"></div>
+        <div class="box-item"></div>
+        <div class="box-item"></div>
+        <div class="box-item"></div>
+    </div>
+</body>
+</html>
