@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="https://i.pinimg.com/originals/7c/02/d8/7c02d8361f7acd759f197fcb243b0800.jpg">
+    <title>White Flower</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            max-width: 1250px;
+            padding: 0 15px;
+            margin: auto;
+            background-color: cadetblue;
+        }
+        
+        .image-header {
+            margin-top: 50px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+        }
+
+        img {
+            width: 100%;
+        }
+        .main-image {
+            margin-top: 50px;
+            overflow: hidden;
+            border-radius: 4px;
+        }
+
+        .similar-image {
+            margin-top: 30px;
+            margin-bottom: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 185px;
+        }
+
+        .image-item {
+            width: 23%;
+            overflow: hidden;
+            border-radius: 4px;
+        }
+
+        .image-item img {
+            transition: all 2s;
+        }
+
+        .image-item img:hover {
+            transform: scale(2);
+        }
+
+        .back-button {
+            width: 100px;
+            height: 50px;
+            background-color: rgb(241, 196, 166);
+            box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
+            border-radius: 4px;
+            position: fixed;
+            right: 100px;
+            bottom: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+        }
+        a {
+            text-decoration: none;
+            color: #464646;
+        }
+        .quote {
+            margin-bottom: 50px;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-header">
+        <h1>White petaled flower</h1>
+    </div>
+
+    <div class="quote">
+        <p><em>You’ve gotta dance like there’s nobody watching,Love like you’ll never be hurt,Sing like there’s nobody listening,And live like it’s heaven on earth. ― William W. Purkey</em></p>
+    </div>
+
+    <div class="main-image">
+        <img src="https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014_960_720.jpg" alt="">
+    </div>
+
+    <div class="similar-image">
+        <div class="image-item">
+            <img src="https://media.istockphoto.com/photos/freshly-cut-grass-picture-id1192014583?b=1&k=6&m=1192014583&s=170667a&w=0&h=1lENmgsAQwF_5FIcl475e24FyWp_sF8LHniDXEKnDs4=" alt="">
+        </div>
+        <div class="image-item">
+            <img src="https://media.istockphoto.com/photos/bunch-of-oranges-fruit-on-branches-picture-id1214591829?b=1&k=6&m=1214591829&s=170667a&w=0&h=a_037bR3BG7u91mElNXWm8727EsUj7i0JrAZxqqJGx8=" alt="">
+        </div>
+        <div class="image-item">
+            <img src="https://media.istockphoto.com/photos/gray-shadows-of-delicate-flowers-on-a-white-wall-picture-id1170767990?b=1&k=6&m=1170767990&s=170667a&w=0&h=Ng4mcEM6XemqZaWiI2fud8OhMWpN5wR1IENpWeAMxtE=" alt="">
+        </div>
+        <div class="image-item">
+            <img src="https://media.istockphoto.com/photos/senior-grandfather-with-toddler-grandson-standing-in-nature-in-spring-picture-id1187522945?b=1&k=6&m=1187522945&s=170667a&w=0&h=reF9krA7i_O1TFicP7b-hc0vKulpOyODr_OBT5Gzl5Y=" alt="">
+        </div>
+    </div>
+
+    <a href="./index.html">
+        <div class="back-button">Back main</div>
+    </a>
+</body>
+</html>

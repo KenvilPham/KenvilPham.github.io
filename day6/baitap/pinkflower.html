@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="https://i.pinimg.com/originals/7c/02/d8/7c02d8361f7acd759f197fcb243b0800.jpg">
+    <title>Pink Flower</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            max-width: 1250px;
+            padding: 0 15px;
+            margin: auto;
+            background-color: cadetblue;
+        }
+        
+        .image-header {
+            margin-top: 50px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+        }
+
+        img {
+            width: 100%;
+        }
+        .main-image {
+            margin-top: 50px;
+            overflow: hidden;
+            border-radius: 4px;
+        }
+
+        .similar-image {
+            margin-top: 30px;
+            margin-bottom: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 185px;
+        }
+
+        .image-item {
+            width: 23%;
+            overflow: hidden;
+            border-radius: 4px;
+        }
+
+        .image-item img {
+            transition: all 2s;
+        }
+
+        .image-item img:hover {
+            transform: scale(2);
+        }
+
+        .back-button {
+            width: 100px;
+            height: 50px;
+            background-color: rgb(241, 196, 166);
+            box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
+            border-radius: 4px;
+            position: fixed;
+            right: 100px;
+            bottom: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+        }
+        a {
+            text-decoration: none;
+            color: #464646;
+        }
+        .quote {
+            margin-bottom: 50px;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-header">
+        <h1>Pink petaled flowers</h1>
+    </div>
+
+    <div class="quote">
+        <p><em>There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle. ― Albert Einstein</em></p>
+    </div>
+
+    <div class="main-image">
+        <img src="https://cdn.pixabay.com/photo/2014/04/14/20/11/flowers-324175_960_720.jpg" alt="">
+    </div>
+
+    <div class="similar-image">
+        <div class="image-item">
+            <img src="https://media.istockphoto.com/photos/branches-of-sakura-isolated-on-white-background-picture-id1135280229?b=1&k=6&m=1135280229&s=170667a&w=0&h=EZ3ok4_JRF3MbrDvaB1BbaVslG3trqEAudREjzfpul8=" alt="">
+        </div>
+        <div class="image-item">
+            <img src="https://media.istockphoto.com/photos/cherry-blossom-picture-id925786468?b=1&k=6&m=925786468&s=170667a&w=0&h=dSAYecg-DFJFDBomOswtpGpzwXKAfOyJ-BbjRX1ov98=" alt="">
+        </div>
+        <div class="image-item">
+            <img src="https://media.istockphoto.com/photos/japanese-cherry-blossom-isolated-on-white-background-picture-id926918530?b=1&k=6&m=926918530&s=170667a&w=0&h=wVMDmxfBuwMrvcKk6NdzyBekM8ixg4wNk39aOOJOWQs=" alt="">
+        </div>
+        <div class="image-item">
+            <img src="https://media.istockphoto.com/photos/pink-cherry-blossom-picture-id926179300?b=1&k=6&m=926179300&s=170667a&w=0&h=aI-TmV-oy2rAO9FQKKbqf_MtepGHrI9Rq79f723FDp0=" alt="">
+        </div>
+    </div>
+
+    <a href="./index.html">
+        <div class="back-button">Back main</div>
+    </a>
+</body>
+</html>
