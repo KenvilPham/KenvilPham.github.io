@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            max-width: 1250px;
+            padding: 0 15px;
+            margin: auto;
+            background-color: cadetblue;
+        }
+
+        .demo-animation {
+            margin: 50px 0;
+            display: flex;
+            justify-content: center;
+        }
+        .heart-image {
+            color: rgb(207, 151, 151);
+            font-size: 400px;
+            animation: sangpd 5s linear;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes sangpd {
+            0% {
+                transform: scale(1);
+            }
+            5% {
+                transform: scale(1.4);
+            }
+            10% {
+                transform: scale(1.2);
+            }
+            15% {
+                transform: scale(1.4);
+            }
+            20% {
+                transform: scale(1);
+            }
+            30% {
+                transform: scale(1);
+            }
+            40% {
+                transform: scale(1.2);
+            }
+            50% {
+                transform: scale(1);
+            }
+            60% {
+                transform: scale(1.2);
+            }
+            70% {
+                transform: scale(1);
+            }
+            80% {
+                transform: scale(1);
+            }
+            90% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .demo-animation2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .demo-animation2 div {
+            font-size: 500%;
+        }
+        .change-text::before {
+            color: #fff;
+            content: "";
+            animation: textchange 5s linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes textchange {
+            0%, 10%, 20% {
+                background-color: darkgreen;
+                content: "Learning";
+                visibility: visible;
+            }
+
+            30% {
+                background-color: darkgreen;
+                content: "Learning";
+                visibility: hidden;
+            }
+            40%, 50%, 60% {
+                background-color: chocolate;
+                content: "Coding";
+                visibility: visible;
+                transform: translateY(-5rem);
+            }
+
+            70% {
+                background-color: chocolate;
+                content: "Coding";
+                visibility: hidden;
+            }
+            80%, 90%, 100% {
+                background-color: indigo;
+                content: "Teaching";
+                visibility: visible;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-animation">
+        <i class="fas fa-heart heart-image"></i>
+    </div>
+
+    <div class="demo-animation2">
+        <div>Start</div>
+        <div class="change-text"></div>
+        <div>Today</div>
+    </div>
+</body>
+</html>
