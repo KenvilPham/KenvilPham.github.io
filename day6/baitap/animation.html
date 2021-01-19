@@ -82,44 +82,43 @@
             align-items: center;
         }
 
-        .demo-animation2 div {
-            font-size: 500%;
+        .demo-animation2 h1 {
+            font-size: 400%;
         }
         .change-text::before {
             color: #fff;
-            content: "";
-            animation: textchange 5s linear;
+            content: "Learning";
+            animation: textchange 2s linear;
             animation-iteration-count: infinite;
+
         }
 
         @keyframes textchange {
-            0%, 10%, 20% {
-                background-color: darkgreen;
-                content: "Learning";
-                visibility: visible;
+            0%{
+                opacity: 0;
+                transform: translate(0, -100px);
             }
 
             30% {
                 background-color: darkgreen;
                 content: "Learning";
-                visibility: hidden;
+                opacity: 1;
+                transform: translate(0, 0);
             }
-            40%, 50%, 60% {
-                background-color: chocolate;
-                content: "Coding";
-                visibility: visible;
-                transform: translateY(-5rem);
+            50% {
+                opacity: 0;
+                transform: translate(0, 100px);
             }
 
-            70% {
+            80% {
                 background-color: chocolate;
                 content: "Coding";
-                visibility: hidden;
+                opacity: 1;
+                transform: translate(0, 0);
             }
-            80%, 90%, 100% {
+            100% {
                 background-color: indigo;
                 content: "Teaching";
-                visibility: visible;
             }
 
         }
@@ -131,9 +130,9 @@
     </div>
 
     <div class="demo-animation2">
-        <div>Start</div>
-        <div class="change-text"></div>
-        <div>Today</div>
+        <h1>Start</h1>
+        <h1 class="change-text"></h1>
+        <h1>Today</h1>
     </div>
 </body>
 </html>
